@@ -1,5 +1,8 @@
 package org.example;
 
-abstract class EnemyShipFactory {
+public interface EnemyShipFactory {
+
+    public ESWeapon addESGun();
+    public ESEngine addESEngine();
 
 }
