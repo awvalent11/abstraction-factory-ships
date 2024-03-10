@@ -1,6 +1,8 @@
-package org.example;
+package ESUFOBoss;
 
-public class ESUFOBossGun implements ESWeapon{
+import org.example.ESWeapon;
+
+public class ESUFOBossGun implements ESWeapon {
 
         // EnemyShip contains a reference to the object
         // ESWeapon. It is stored in the field weapon

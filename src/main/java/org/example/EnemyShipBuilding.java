@@ -13,8 +13,11 @@ public abstract class EnemyShipBuilding {
     //are based on the String entered. After the ship is made
     //we execute multiple methods in the EnemyShip Object
 
+
     public EnemyShip orderThisShip(String typeOfShip){
+        
         EnemyShip theEnemyShip = makeEnemyShip(typeOfShip);
+
 
         theEnemyShip.makeShip();
         theEnemyShip.displayEnemyShip();

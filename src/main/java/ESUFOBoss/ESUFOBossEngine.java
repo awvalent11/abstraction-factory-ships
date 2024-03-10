@@ -1,8 +1,10 @@
-package org.example;
+package ESUFOBoss;
 
 // Here we define a basic component of a space ship
 // Any part that implements the interface ESEngine
 // can replace that part in any ship
+
+import org.example.ESEngine;
 
 public class ESUFOBossEngine implements ESEngine {
 

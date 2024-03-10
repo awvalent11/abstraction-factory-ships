@@ -1,6 +1,9 @@
 package org.example;
 
-public class UFOEnemyShip extends EnemyShip {
+import org.example.EnemyShip;
+import org.example.EnemyShipFactory;
+
+public class UFOEnyShip extends EnemyShip {
     //We define the type of ship we want to create
     //by stating we want to use the factory that
     //makes the enemy ships
@@ -12,14 +15,8 @@ public class UFOEnemyShip extends EnemyShip {
     //object also states the specific parts needed
     //to make a regular UFO versus a Boss UFO
 
-    public UFOEnemyShip(EnemyShipFactory shipFactory) {
-        this.shipFactory = shipFactory;
-    }
-
-    //EnemyShipBuilding calls this method to build a
-    //specific UFOEnemyShip
-    void makeShip(){
-        System.out.println("Making enemy ship " + getName());
+    protected void makeShip(){
+        System.out.println("Making enemy ship: " + getName());
         // The specific weapon & engine needed were passed in
         // shipFactory. We are assigning those specific part
         // objects to the UFOEnemyShip here
@@ -27,4 +24,12 @@ public class UFOEnemyShip extends EnemyShip {
         engine = shipFactory.addESEngine();
     }
 
+    public UFOEnyShip(EnemyShipFactory shipFactory) {
+        this.shipFactory = shipFactory;
+    }
+
+    //EnemyShipBuilding calls this method to build a
+    //specific UFOEnemyShip
+
 }
+

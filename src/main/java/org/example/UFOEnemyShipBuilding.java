@@ -11,7 +11,13 @@ public class UFOEnemyShipBuilding extends EnemyShipBuilding {
         //needs. The EnemyShip object is returned & given a name
         if(typeOfShip.equals("UFO")){
             EnemyShipFactory shipPartsFactory = new UFOEnemyShipFactory();
-            theEnemyShip = new UFOEnemyShip(shipPartsFactory);
+            theEnemyShip = new UFOEnyShip(shipPartsFactory);
+            theEnemyShip.setName("First regular UFO Enemy Ship");
+        }
+
+        if(typeOfShip.equals("Boss")){
+            EnemyShipFactory shipFactory = new UFOEnemyShipFactory();
+            theEnemyShip = new UFOBossEnemyShip(shipFactory);
         }
 
         return theEnemyShip;

@@ -7,8 +7,8 @@ public abstract class EnemyShip {
     //These can be changed easily by assigning new parts
     //in UFOEnemyShipFactory
 
-    ESWeapon weapon;
-    ESEngine engine;
+    public ESWeapon weapon;
+    public ESEngine engine;
 
     public String getName(){ return name;}
     public void setName(String newName) {name = newName;}
