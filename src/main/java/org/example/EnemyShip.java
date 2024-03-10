@@ -1,6 +1,15 @@
 package org.example;
 
 public abstract class EnemyShip {
+    // This will be a Bet
+
+    // Types of Bets: moneyline (will contain home and away), over/under, total, straight w-l (will contain home and away), props -> (contain odds, position, value, expiration, game id)
+    //All bets will have
+    //odds
+    //position
+    //value
+    //expiration date
+    //game id?
 
     private String name;
     //Newly defined objects that represent weapon & engine
