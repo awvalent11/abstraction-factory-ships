@@ -6,7 +6,7 @@ public class MoneylineBuilding extends BetBuilding{
     //provide as an option to build
 
     @Override
-    protected Bet makeBet(BetType betType){
+    protected Bet makeBet(WagerType wagerType){
 
         Bet bet = null;
         //If UFO was sent to grab use the factory that knows

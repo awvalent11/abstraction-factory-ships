@@ -1,6 +1,6 @@
 package org.example;
 
-public enum BetType {
+public enum WagerType {
     MONEYLINE,
     OVERUNDER,
     TOTAL,

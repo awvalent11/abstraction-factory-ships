@@ -8,16 +8,15 @@ public abstract class BetBuilding {
     //The specific components used for wager & game depend
     //upon the Enum & number that is passed to this method
 
-    protected abstract Bet makeBet(BetType betType);
+    protected abstract Bet makeBet(WagerType wagerType);
     //When called a new Bet is made. The specific parts
     //are based on the String entered. After the ship is made
     //we execute multiple methods in the Bet Object
 
 
-    public Bet createThisBet(BetType betType) {
+    public Bet createThisBet(WagerType wagerType) {
 
-        Bet bet = makeBet(betType);
-
+        Bet bet = makeBet(wagerType);
 
         bet.displayBetData();
 
